@@ -1,12 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auth
+  name: sample-backend-canary
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "auth"
+      app: sample
   template:
     metadata:
       labels:
